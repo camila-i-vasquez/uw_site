@@ -8,19 +8,43 @@ body {
 .header {
   background-color:darkseagreen;
   text-align: center;
+  padding: 30px;
+  width: 100%;
+  height: 120px;
+  text-align: center;
+}
+
+.column {
+  float: left;
+  top: 150px;
+  width: 25%;
   padding: 10px;
-  width: 500px ;
-  align-self: center;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.content {
+float: left;
+width: 75%;
+padding: 10px;
 }
 
 /* Style the top navigation bar */
-.topnav {
-  overflow: hidden;
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 150px;
+  left: 10px;
+  overflow-x: hidden;
   background-color:indianred;
 }
 
 /* Style the topnav links */
-.topnav a {
+.sidenav a {
   float: left;
   display: block;
   color: #f2f2f2;
@@ -30,7 +54,7 @@ body {
 }
 
 /* Change color on hover */
-.topnav a:hover {
+.sidenav a:hover {
   background-color: #ddd;
   color: black;
 }
